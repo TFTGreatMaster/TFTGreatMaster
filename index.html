@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todolist</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="container">
+        <div class="add">
+          <input type="text" class="add__input" placeholder="Add a task..." />
+          <button class="add__btn">Add</button>
+        </div>
+        <div class="content">
+          <div class="item title">
+            <div class="item__status">Status</div>
+            <div class="item__name">Name of task</div>
+            <div class="item__action">Action</div>
+          </div>
+          <div class="items"></div>
+        </div>
+      </div>
+      <div class="popup">
+        <div class="container">
+          <div class="popup__header">Edit</div>
+          <div class="add">
+            <input type="text" class="add__input" placeholder="Add a task..." />
+          </div>
+          <div class="icon">
+            <button class="btn popup__btn-update">Update</button>
+            <button class="btn popup__btn-close">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

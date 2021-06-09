@@ -1,0 +1,198 @@
+$first-color: #a053ec;
+$secondary: #f16f6f;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+.app {
+  .btn {
+    border-radius: 5px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 13px;
+    outline: none;
+    border: none;
+  }
+  .container {
+    width: 60rem;
+    margin: auto;
+    margin-top: 8.4rem;
+
+    .add {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 35px;
+      &__input {
+        background: #ffffff;
+        border: 1px solid #b1b1b7;
+        border-radius: 5px;
+        width: 458px;
+        height: 46px;
+        outline: none;
+        padding-left: 14px;
+        &::placeholder {
+          color: #505058;
+        }
+      }
+      &__btn {
+        background: rgba(#475be2, 0.5);
+        border-radius: 5px;
+        color: #fff;
+        text-align: center;
+        width: 122px;
+        height: 46px;
+        outline: none;
+        border: none;
+        &-active {
+          cursor: pointer;
+          background: #475be2;
+        }
+      }
+    }
+    .content {
+      width: 100%;
+      .items {
+        max-height: 530px;
+        overflow-y: auto;
+      }
+      .item {
+        background-color: #fff;
+        display: flex;
+        border: 1px solid #dbdbe0;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        &__status {
+          width: 141px;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          padding-left: 20px;
+          input {
+            display: none;
+            &:checked + label {
+              background: #22d898;
+              border: none;
+            }
+          }
+          label {
+            width: 22px;
+            height: 22px;
+            border: 2px solid #dbdade;
+            border-radius: 4px;
+          }
+        }
+        &__name {
+          width: 326px;
+          height: 60px;
+          display: flex;
+          align-items: center;
+        }
+        &__action {
+          width: 133px;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          &-edit {
+            width: 40px;
+            height: 28px;
+            background-color: rgba($color: $first-color, $alpha: 0.2);
+            color: $first-color;
+            margin-right: 8px;
+            &:hover {
+              color: #fff;
+              background-color: $first-color;
+            }
+          }
+          &-remove {
+            width: 64px;
+            height: 28px;
+            background-color: rgba($color: $secondary, $alpha: 0.2);
+            color: $secondary;
+            &:hover {
+              color: #fff;
+              background-color: $secondary;
+            }
+          }
+        }
+      }
+      .title {
+        background: #e5e5ea;
+        font-weight: 500;
+        color: #2a2a2f;
+      }
+    }
+  }
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(#000, 0.5);
+    .container {
+      width: 70rem;
+      background-color: #fff;
+      border-radius: 1rem;
+      margin-top: 25rem;
+      padding-left: 5rem;
+      .add {
+        margin-bottom: 25px;
+        input {
+          width: 60rem;
+        }
+      }
+    }
+    &__header {
+      height: 5rem;
+      display: flex;
+      align-items: center;
+      font-size: 2.5rem;
+      font-weight: 500;
+      margin-bottom: 10px;
+      padding-top: 10px;
+    }
+    .icon {
+      display: flex;
+      padding-bottom: 15px;
+    }
+    &__btn-update {
+      width: 70px;
+      height: 28px;
+      background-color: rgba($color: $first-color, $alpha: 0.2);
+      color: $first-color;
+      margin-right: 8px;
+      &:hover {
+        color: #fff;
+        background-color: $first-color;
+      }
+    }
+    &__btn-close {
+      width: 70px;
+      height: 28px;
+      background-color: rgba($color: $secondary, $alpha: 0.2);
+      color: $secondary;
+      margin-right: 8px;
+      &:hover {
+        color: #fff;
+        background-color: $secondary;
+      }
+    }
+  }
+}

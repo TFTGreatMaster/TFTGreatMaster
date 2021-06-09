@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+.app .btn {
+  border-radius: 5px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 13px;
+  outline: none;
+  border: none;
+}
+.app .container {
+  width: 60rem;
+  margin: auto;
+  margin-top: 8.4rem;
+}
+.app .container .add {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+.app .container .add__input {
+  background: #ffffff;
+  border: 1px solid #b1b1b7;
+  border-radius: 5px;
+  width: 458px;
+  height: 46px;
+  outline: none;
+  padding-left: 14px;
+}
+.app .container .add__input::placeholder {
+  color: #505058;
+}
+.app .container .add__btn {
+  background: rgba(71, 91, 226, 0.5);
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  width: 122px;
+  height: 46px;
+  outline: none;
+  border: none;
+}
+.app .container .add__btn-active {
+  cursor: pointer;
+  background: #475be2;
+}
+.app .container .content {
+  width: 100%;
+}
+.app .container .content .items {
+  max-height: 530px;
+  overflow-y: auto;
+}
+.app .container .content .item {
+  background-color: #fff;
+  display: flex;
+  border: 1px solid #dbdbe0;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.app .container .content .item__status {
+  width: 141px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.app .container .content .item__status input {
+  display: none;
+}
+.app .container .content .item__status input:checked + label {
+  background: #22d898;
+  border: none;
+}
+.app .container .content .item__status label {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #dbdade;
+  border-radius: 4px;
+}
+.app .container .content .item__name {
+  width: 326px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.app .container .content .item__action {
+  width: 133px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.app .container .content .item__action-edit {
+  width: 40px;
+  height: 28px;
+  background-color: rgba(160, 83, 236, 0.2);
+  color: #a053ec;
+  margin-right: 8px;
+}
+.app .container .content .item__action-edit:hover {
+  color: #fff;
+  background-color: #a053ec;
+}
+.app .container .content .item__action-remove {
+  width: 64px;
+  height: 28px;
+  background-color: rgba(241, 111, 111, 0.2);
+  color: #f16f6f;
+}
+.app .container .content .item__action-remove:hover {
+  color: #fff;
+  background-color: #f16f6f;
+}
+.app .container .content .title {
+  background: #e5e5ea;
+  font-weight: 500;
+  color: #2a2a2f;
+}
+.app .popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.app .popup .container {
+  width: 70rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin-top: 25rem;
+  padding-left: 5rem;
+}
+.app .popup .container .add {
+  margin-bottom: 25px;
+}
+.app .popup .container .add input {
+  width: 60rem;
+}
+.app .popup__header {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+.app .popup .icon {
+  display: flex;
+  padding-bottom: 15px;
+}
+.app .popup__btn-update {
+  width: 70px;
+  height: 28px;
+  background-color: rgba(160, 83, 236, 0.2);
+  color: #a053ec;
+  margin-right: 8px;
+}
+.app .popup__btn-update:hover {
+  color: #fff;
+  background-color: #a053ec;
+}
+.app .popup__btn-close {
+  width: 70px;
+  height: 28px;
+  background-color: rgba(241, 111, 111, 0.2);
+  color: #f16f6f;
+  margin-right: 8px;
+}
+.app .popup__btn-close:hover {
+  color: #fff;
+  background-color: #f16f6f;
+}
+
